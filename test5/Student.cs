@@ -1,12 +1,13 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace test5
+﻿namespace test5
 {
-    internal class Student
+    class Student
     {
+        public string StudentId { get; set; }
+        public string StudentName { get; set;}
+
+        public override string ToString()
+        {
+            return $"{StudentId} {StudentName}";
+        }
     }
 }
