@@ -5,8 +5,29 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:test5"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
+        Title="2023選課系統" Height="800" Width="1000">
     <Grid>
-
+        <Grid.RowDefinitions>
+            <RowDefinition Height="50"/>
+            <RowDefinition Height="500"/>
+            <RowDefinition Height="30"/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="500"/>
+            <ColumnDefinition Width="100"/>
+            <ColumnDefinition Width="500"/>
+        </Grid.ColumnDefinitions>
+        <StackPanel Grid.ColumnSpan="3" Orientation="Horizontal" Background="#FFFDECEC">
+            <Label Content="學生" HorizontalAlignment="Left" VerticalAlignment="Center" VerticalContentAlignment="Center" Width="60" Height="50" FontSize="14" Margin="50,0,0,0"/>
+            <ComboBox x:Name="cmbStudent" Width="300" Height="30" HorizontalAlignment="Left" VerticalAlignment="Center"/>
+        </StackPanel>
+        <TabControl Grid.Row="1">
+            <TabItem Header="以教師分類課程">
+                <TreeView x:Name="tvTeacher" Background="#FF928282"/>
+            </TabItem>
+            <TabItem Header="所有課程">
+                <ListBox x:Name="lbCourse" Background="#FF967F7F"/>
+            </TabItem>
+        </TabControl>
     </Grid>
 </Window>

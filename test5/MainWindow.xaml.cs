@@ -20,9 +20,18 @@ namespace test5
     /// </summary>
     public partial class MainWindow : Window
     {
+        List<Student> students = new List<Student>();
         public MainWindow()
         {
             InitializeComponent();
+            InitializeStudent();
+        }
+
+        private void InitializeStudent()
+        {
+            students.Add(new Student { StudentId = "A1234567", StudentName = "陳小明" });
+            students.Add(new Student { StudentId = "A1234456", StudentName = "王小美" });
+            students.Add(new Student { StudentId = "A1234678", StudentName = "黃小琥" });
         }
     }
 }
