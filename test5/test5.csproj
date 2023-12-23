@@ -7,4 +7,14 @@
     <UseWPF>true</UseWPF>
   </PropertyGroup>
 
+  <ItemGroup>
+    <None Remove="online-course.png" />
+    <None Remove="teacher.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="online-course.png" />
+    <Resource Include="teacher.png" />
+  </ItemGroup>
+
 </Project>
